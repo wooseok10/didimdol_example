@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="kor">
+<html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -48,10 +49,43 @@
             padding: 2px;
         }
 
+        .personImg {
+            height: 200px;
+            width: 100%;
+            font-size: 10rem;
+            color: white;
+            line-height: 200px;
+        }
+
+        .fileList li {
+            width: 100%;
+            list-style: decimal;
+            border-bottom: solid .5px lightgray;
+            padding: 2px 0;
+        }
+
+        .download-btn {
+            width: 60px;
+            height: 25px;
+            line-height: 10px;
+            float: right;
+        }
+
+        .left-side {
+            float: left;
+            width: 70%;
+        }
+
+        .right-side {
+            float: right;
+            width: 30%;
+        }
+
         .fa-bell,
         .fa-envelope {
             color: lightslategray;
         }
+
     </style>
 
 </head>
@@ -68,7 +102,7 @@
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html"
                 style="width: 80%; z-index: 0;">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <img src="../startbootstrap-sb-admin-2-gh-pages/img/withusLogo_white.png"
+                    <img src="/img/withusLogo_white.png"
                         style="margin-top: 220px; margin-left: -20px; width: 300px; opacity: .2;">
                 </div>
                 <br />
@@ -550,8 +584,7 @@
                 <a class="nav-link" href="charts.html">
                     <!-- <i class="fas fa-fw fa-chart-area"></i> -->
                     <i class="fas fa-chart-bar"></i>
-                    <span>Charts</span>
-                </a>
+                    <span>Charts</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
@@ -775,575 +808,215 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
+                <div class="container-fluid" id="videoConferenceContainerFluid">
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Main</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <h1 class="h3 mb-0 text-gray-800">화상회의</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                            <i class="fas fa-download fa-sm text-white-50"></i> 회의록 만들기
+                        </a>
                     </div>
+                    <h5 class="mb-0 text-gray-800">접속인원 : 8 / 12</h5>
 
-                    <!-- Content Row -->
-                    <div class="row">
+                    <!-- Content Row left -->
+                    <div class="row left-side">
                         <!-- Content Row -->
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
+                        <div class="col-xl-3 col-md-3 mb-4 videoWrapper">
+                            <div class="card border-bottom-primary shadow py-2">
+                                <div class="card-body text-center bg-dark">
                                     <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                수익 (10월)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">00,000만원</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                        <div class="col text-center">
+                                            <!-- <i class="fas fa-user personImg"></i> -->
+                                            <i class="fas fa-volume-up fa-lg text-white"
+                                                style="position: absolute;"></i>
+                                            <img src="/img/인물7.png"
+                                                class="personImg">
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-white bg-dark text-center pb-2 employee-name">나 / 신사업기획팀</span>
                             </div>
                         </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
+                        <div class="col-xl-3 col-md-3 mb-4 videoWrapper">
+                            <div class="card border-bottom-primary shadow py-2">
+                                <div class="card-body text-center bg-dark">
                                     <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                수익 (2020년)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">0,000,000만원</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        <div class="col text-center">
+                                            <!-- <i class="fas fa-user personImg"></i> -->
+                                            <i class="fas fa-volume-up fa-lg text-white"
+                                                style="position: absolute;"></i>
+                                            <img src="/img/인물5.png"
+                                                class="personImg">
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-white bg-dark text-center pb-2 employee-name">김부장 / 신사업기획팀</span>
                             </div>
                         </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
+                        <div class="col-xl-3 col-md-3 mb-4 videoWrapper">
+                            <div class="card border-bottom-primary shadow py-2">
+                                <div class="card-body text-center bg-dark">
                                     <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">공정 진행율
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        <div class="col text-center">
+                                            <!-- <i class="fas fa-user personImg"></i> -->
+                                            <i class="fas fa-volume-mute fa-lg text-white"
+                                                style="position: absolute;"></i>
+                                            <img src="/img/인물1.png"
+                                                class="personImg">
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-white bg-dark text-center pb-2 employee-name">남과장 / 신사업기획팀
+                                </span>
                             </div>
                         </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
+                        <div class="col-xl-3 col-md-3 mb-4 videoWrapper">
+                            <div class="card border-bottom-primary shadow py-2">
+                                <div class="card-body text-center bg-dark">
                                     <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                보류중인 요청</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        <div class="col text-center">
+                                            <!-- <i class="fas fa-user personImg"></i> -->
+                                            <i class="fas fa-volume-up fa-lg text-white"
+                                                style="position: absolute;"></i>
+                                            <img src="/img/인물2.png"
+                                                class="personImg">
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-white bg-dark text-center pb-2 employee-name">한팀장 / 신사업기획팀</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 mb-4 videoWrapper">
+                            <div class="card border-bottom-primary shadow py-2">
+                                <div class="card-body text-center bg-dark">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col text-center">
+                                            <!-- <i class="fas fa-user personImg"></i> -->
+                                            <i class="fas fa-volume-up fa-lg text-white"
+                                                style="position: absolute;"></i>
+                                            <img src="/img/인물3.png"
+                                                class="personImg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="text-white bg-dark text-center pb-2 employee-name">박대리 / 신사업기획팀</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 mb-4 videoWrapper">
+                            <div class="card border-bottom-primary shadow py-2">
+                                <div class="card-body text-center bg-dark">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col text-center">
+                                            <!-- <i class="fas fa-user personImg"></i> -->
+                                            <i class="fas fa-volume-mute fa-lg text-white"
+                                                style="position: absolute;"></i>
+                                            <img src="/img/인물6.png"
+                                                class="personImg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="text-white bg-dark text-center pb-2 employee-name">이대리 / 신사업기획팀</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 mb-4 videoWrapper">
+                            <div class="card border-bottom-primary shadow py-2">
+                                <div class="card-body text-center bg-dark">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col text-center">
+                                            <!-- <i class="fas fa-user personImg"></i> -->
+                                            <i class="fas fa-volume-up fa-lg text-white"
+                                                style="position: absolute;"></i>
+                                            <img src="/img/noImage.png"
+                                                class="personImg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="text-white bg-dark text-center pb-2 employee-name">전사원 / 신사업기획팀</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 mb-4 videoWrapper">
+                            <div class="card border-bottom-primary shadow py-2">
+                                <div class="card-body text-center bg-dark">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col text-center">
+                                            <!-- <i class="fas fa-user personImg"></i> -->
+                                            <i class="fas fa-volume-up fa-lg text-white"
+                                                style="position: absolute;"></i>
+                                            <img src="/img/인물4.png"
+                                                class="personImg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="text-white bg-dark text-center pb-2 employee-name">유사원 / 신사업기획팀</span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Content Row -->
-
-                    <div class="row">
-                        <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-9 col-md-6">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">납품현황</h6>
+                    <div class="row right-side mb-3">
+                        <div class="card border-bottom-info shadow py-2 bg-gradient-warning mb-3 chatting-wrapper"
+                            style="width: 400px;">
+                            <div class="card-body text-left">
+                                <span class="text-dark">김부장</span>
+                                <div class="text-black card col-md-7 mb-1">안녕하세요</div>
+                                <span class="text-dark">남과장</span>
+                                <div class="text-black card col-md-7 mb-1">안녕하세요~</div>
+                                <span class="text-dark">이대리</span>
+                                <div class="text-black card col-md-7 mb-1">안녕하세요 사업계획서 첨부합니다</div>
+                                <span class="text-dark">강사원</span>
+                                <div class="text-black card col-md-7 mb-1">안녕하세요 좋은 월요일 아침입니다</div>
+                                <div class="text-black card col-md-7 mb-1 float-right text-right">안녕하세요
                                 </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                    <div class="table-area">
-                                        <table class="table table-stiped table-bordered text-center" id="earning_table">
-                                            <thead>
-                                                <tr>
-                                                    <th>고객사</th>
-                                                    <th>구분</th>
-                                                    <th>1월</th>
-                                                    <th>2월</th>
-                                                    <th>3월</th>
-                                                    <th>4월</th>
-                                                    <th>5월</th>
-                                                    <th>6월</th>
-                                                    <th>7월</th>
-                                                    <th>8월</th>
-                                                    <th>9월</th>
-                                                    <th>10월</th>
-                                                    <th>11월</th>
-                                                    <th>12월</th>
-                                                    <th>sum</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td rowspan="3">한성기업(주)</td>
-                                                    <td>수주</td>
-                                                    <td>560</td>
-                                                    <td>800</td>
-                                                    <td>1050</td>
-                                                    <td>1200</td>
-                                                    <td>1550</td>
-                                                    <td>1350</td>
-                                                    <td>1100</td>
-                                                    <td>1200</td>
-                                                    <td>1000</td>
-                                                    <td>1400</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>11210</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>납기</td>
-                                                    <td>520</td>
-                                                    <td>800</td>
-                                                    <td>900</td>
-                                                    <td>1000</td>
-                                                    <td>1350</td>
-                                                    <td>1100</td>
-                                                    <td>1000</td>
-                                                    <td>800</td>
-                                                    <td>1000</td>
-                                                    <td>1100</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>9570</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>출하</td>
-                                                    <td>520</td>
-                                                    <td>800</td>
-                                                    <td>900</td>
-                                                    <td>1000</td>
-                                                    <td>1350</td>
-                                                    <td>1100</td>
-                                                    <td>1000</td>
-                                                    <td>800</td>
-                                                    <td>1000</td>
-                                                    <td>1100</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>9570</td>
-                                                </tr>
-                                                <tr>
-                                                    <td rowspan="3">(주)오뚜기</td>
-                                                    <td>수주</td>
-                                                    <td>750</td>
-                                                    <td>1100</td>
-                                                    <td>1500</td>
-                                                    <td>1750</td>
-                                                    <td>1900</td>
-                                                    <td>1700</td>
-                                                    <td>1550</td>
-                                                    <td>1300</td>
-                                                    <td>1500</td>
-                                                    <td>1600</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>14650</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>납기</td>
-                                                    <td>750</td>
-                                                    <td>1000</td>
-                                                    <td>1300</td>
-                                                    <td>1600</td>
-                                                    <td>1900</td>
-                                                    <td>1500</td>
-                                                    <td>1300</td>
-                                                    <td>1100</td>
-                                                    <td>1200</td>
-                                                    <td>1400</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>13050</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>출하</td>
-                                                    <td>750</td>
-                                                    <td>1000</td>
-                                                    <td>1300</td>
-                                                    <td>1600</td>
-                                                    <td>1900</td>
-                                                    <td>1500</td>
-                                                    <td>1300</td>
-                                                    <td>1100</td>
-                                                    <td>1200</td>
-                                                    <td>1400</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>13050</td>
-                                                </tr>
-                                                <tr>
-                                                    <td rowspan="3">(주)대상</td>
-                                                    <td>수주</td>
-                                                    <td>880</td>
-                                                    <td>1300</td>
-                                                    <td>1600</td>
-                                                    <td>1850</td>
-                                                    <td>2000</td>
-                                                    <td>1800</td>
-                                                    <td>1600</td>
-                                                    <td>1500</td>
-                                                    <td>1700</td>
-                                                    <td>1400</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>15630</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>납기</td>
-                                                    <td>820</td>
-                                                    <td>1200</td>
-                                                    <td>1550</td>
-                                                    <td>1850</td>
-                                                    <td>1960</td>
-                                                    <td>1800</td>
-                                                    <td>1500</td>
-                                                    <td>1600</td>
-                                                    <td>1400</td>
-                                                    <td>1900</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>15580</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>출하</td>
-                                                    <td>820</td>
-                                                    <td>1200</td>
-                                                    <td>1550</td>
-                                                    <td>1850</td>
-                                                    <td>1960</td>
-                                                    <td>1800</td>
-                                                    <td>1500</td>
-                                                    <td>1600</td>
-                                                    <td>1400</td>
-                                                    <td>1900</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>15580</td>
-                                                </tr>
-                                                <tr>
-                                                    <td rowspan="3">Total</td>
-                                                    <td>수주</td>
-                                                    <td>2190</td>
-                                                    <td>3200</td>
-                                                    <td>4150</td>
-                                                    <td>4800</td>
-                                                    <td>5450</td>
-                                                    <td>4850</td>
-                                                    <td>4250</td>
-                                                    <td>4000</td>
-                                                    <td>4200</td>
-                                                    <td>4400</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>41490
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>납기</td>
-                                                    <td>2090</td>
-                                                    <td>3000</td>
-                                                    <td>3750</td>
-                                                    <td>4450</td>
-                                                    <td>5210</td>
-                                                    <td>4400</td>
-                                                    <td>3800</td>
-                                                    <td>3500</td>
-                                                    <td>3600</td>
-                                                    <td>4400</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>38200</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>출하</td>
-                                                    <td>2090</td>
-                                                    <td>3000</td>
-                                                    <td>3750</td>
-                                                    <td>4450</td>
-                                                    <td>5210</td>
-                                                    <td>4400</td>
-                                                    <td>3800</td>
-                                                    <td>3500</td>
-                                                    <td>3600</td>
-                                                    <td>4400</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>38200</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                <div class="text-center" style="margin: 30% 0 0 0;">
+                                    <input type="text" value="좋은 월" style="height: 30px; width: 70%;" />
+                                    <button type="button" class="btn btn-info shadow"
+                                        style="height: 30px; line-height: 15px;">전송</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-bottom-info shadow py-2 bg-light mb-3 file-list" style="width: 400px;">
+                            <div class="card-body text-left">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col text-center">
+                                        <!-- <img src="/img/noImage.png" class="personImg"> -->
+                                        <div class="card text-left">
+                                            <ul class="fileList">
+                                                <li>사업계획서.pptx
+                                                    <button class="btn btn-secondary download-btn">다운</button>
+                                                </li>
+                                                <li>2020 11월 2주차 회의록.hwp
+                                                    <button class="btn btn-secondary download-btn">다운</button>
+                                                </li>
+                                                <li>회사홍보영상.mp4
+                                                    <button class="btn btn-secondary download-btn">다운</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row fileInput" style="margin-top: 20%;">
+                                            <input type="file" class="mr-0" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Pie Chart -->
-                        <div class="col-xl-2 col-lg-4 col-md-3" style="height: 420px;">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">1호기 세부진행율</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie">
-                                        <canvas id="myPieChart"></canvas>
-                                    </div>
-                                    <div class="text-center small">
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-primary"></i> Direct
-                                        </span>
-                                        <!-- <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Social
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> Referral -->
-                                        </span>
+                        <div class="card border-bottom-primary shadow py-2 big-employee text-center"
+                            style="display: none;">
+                            <div class="card-body text-center bg-dark">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col text-center">
+                                        <!-- <i class="fas fa-user personImg"></i> -->
+                                        <i class="fas fa-volume-up fa-lg text-white" style="position: absolute;"></i>
+                                        <img src="/img/인물4.png" class="personImg">
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-4 col-md-3" style="height: 420px;">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">2호기 세부진행율</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie">
-                                        <canvas id="myPieChart2"></canvas>
-                                    </div>
-                                    <div class="text-center small">
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Social
-                                        </span>
-                                        <!-- <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> Referral
-                                        </span> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-4" style="height: 420px;">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">2호기 세부진행율</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie">
-                                        <canvas id="myPieChart2"></canvas>
-                                    </div>
-                                    <div class="text-center small">
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Social
-                                        </span>
-                                        <!-- <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> Referral
-                                        </span> -->
-                                    </div>
-                                </div>
+                                <span class="text-white bg-dark text-center pb-2 employee-name"
+                                    style="font-size: 15px;">유사원 / 신사업기획팀</span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Content Column -->
-                        <!-- <div class="col-lg-6 mb-4"> -->
-
-                        <!-- Project Card Example -->
-                        <!-- <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="small font-weight-bold">Server Migration <span
-                                            class="float-right">20%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
-                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Sales Tracking <span
-                                            class="float-right">40%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
-                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Customer Database <span
-                                            class="float-right">60%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: 60%"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Payout Details <span
-                                            class="float-right">80%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Account Setup <span
-                                            class="float-right">Complete!</span></h4>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
-                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div> -->
-
-                        <!-- Color System -->
-                        <!-- <div class="row">
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-primary text-white shadow">
-                                        <div class="card-body">
-                                            Primary
-                                            <div class="text-white-50 small">#4e73df</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-success text-white shadow">
-                                        <div class="card-body">
-                                            Success
-                                            <div class="text-white-50 small">#1cc88a</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-info text-white shadow">
-                                        <div class="card-body">
-                                            Info
-                                            <div class="text-white-50 small">#36b9cc</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-warning text-white shadow">
-                                        <div class="card-body">
-                                            Warning
-                                            <div class="text-white-50 small">#f6c23e</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-danger text-white shadow">
-                                        <div class="card-body">
-                                            Danger
-                                            <div class="text-white-50 small">#e74a3b</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-secondary text-white shadow">
-                                        <div class="card-body">
-                                            Secondary
-                                            <div class="text-white-50 small">#858796</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-light text-black shadow">
-                                        <div class="card-body">
-                                            Light
-                                            <div class="text-black-50 small">#f8f9fc</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-dark text-white shadow">
-                                        <div class="card-body">
-                                            Dark
-                                            <div class="text-white-50 small">#5a5c69</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>  -->
-
-                        <div class="col-lg-6 mb-4">
-
-                            <!-- Illustrations -->
-                            <!-- <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
-                                            src="img/undraw_posting_photo.svg" alt="">
-                                    </div>
-                                    <p>Add some quality, svg illustrations to your project courtesy of <a
-                                            target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a
-                                        constantly updated collection of beautiful svg images that you can use
-                                        completely free and without attribution!</p>
-                                    <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
-                                        unDraw &rarr;</a>
-                                </div>
-                            </div> -->
-
-                            <!-- Approach -->
-                            <!-- <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
-                                        CSS bloat and poor page performance. Custom CSS classes are used to create
-                                        custom components and custom utility classes.</p>
-                                    <p class="mb-0">Before working with this theme, you should become familiar with the
-                                        Bootstrap framework, especially the utility classes.</p>
-                                </div>
-                            </div> -->
-
-                        </div>
-                    </div>
-
+                    <!-- Content Row left -->
                 </div>
                 <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
 
